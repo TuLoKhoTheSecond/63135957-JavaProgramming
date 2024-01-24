@@ -7,10 +7,10 @@ public class Bai1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-       System.out.print("Họ và tên: ");
+       System.out.print("Họ và tên: \n");
        String hoVaTen = scanner.nextLine();
 
-       System.out.print("Điểm TB: ");
+       System.out.print("Điểm TB: \n");
        double diemTB = scanner.nextDouble();
 
 
