@@ -8,8 +8,19 @@ public class Bai4 {
 		// Nhập Số điện
 		System.out.print("Nhập số điện sử dụng trong tháng: ");
         int soDien = scanner.nextInt();
-        //Hàm tính tiền
         
+        int giaDuoi50 = 1000;
+        int giaVuot50 = 1200;
+        int gioiHan50 = 50;
+
+        int tien;
+        //Hàm tính tiền
+        if (soDien <= gioiHan50) {
+            tien = soDien * giaDuoi50;
+        } else {
+            tien = gioiHan50 * giaDuoi50 + (soDien - gioiHan50) * giaVuot50;
+        }
+        System.out.printf("Tiền điện phải thanh toán: %d VND\n", tien);
         scanner.close();
 	}
 
