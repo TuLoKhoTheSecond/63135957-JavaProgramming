@@ -27,7 +27,18 @@ public class Bai2 {
                 double x = -c / b; //Hàm Giải PT bậc 2
                 System.out.printf("Nghiệm của phương trình: x = %.2f\n", x);
             }
-        
+        } else {
+        	double delta = Math.pow(b, 2) - 4 * a * c;
+        	if (delta < 0) {
+                System.out.println("Phương trình vô nghiệm.");
+            } else if (delta == 0) {
+                double x = -b / (2 * a);
+                System.out.printf("Nghiệm kép của phương trình: x = %.2f\n", x);
+            } else {
+                double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                System.out.printf("Nghiệm phân biệt của phương trình: x1 = %.2f, x2 = %.2f\n", x1, x2);
+        }
      }
         scanner.close();
 	}
