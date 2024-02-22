@@ -3,12 +3,12 @@ package till;
 import java.util.Scanner;
 
 public class Bai1 {
-	    public static void main(String[] args) {
-	        SanPham sp = new SanPham("Áo sơ mi", 200000, 0.1);
-	        sp.xuat();
-	    }
-	}
-
+	public static void main(String[] args) {
+        SanPham sp = new SanPham("Ten", 0.0, 0.0);
+        sp.nhap();
+        sp.xuat();
+    }
+}
 class SanPham {
 	    private String tenSp;
 	    private double donGia;
