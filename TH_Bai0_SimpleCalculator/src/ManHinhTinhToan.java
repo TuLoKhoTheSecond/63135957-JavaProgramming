@@ -72,17 +72,25 @@ public class ManHinhTinhToan extends JFrame {
         btnTru.setBounds(264, 245, 103, 50);
         contentPane.add(btnTru);
 		
-		JButton btnNhan = new JButton("Nhân");
-
-		btnNhan.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnNhan.setBounds(397, 245, 103, 50);
-		contentPane.add(btnNhan);
+        JButton btnNhan = new JButton("Nhân");
+        btnNhan.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                HamXuLyNhan();
+            }
+        });
+        btnNhan.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnNhan.setBounds(397, 245, 103, 50);
+        contentPane.add(btnNhan);
 		
-		JButton btnChia = new JButton("Chia");
-		
-		btnChia.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnChia.setBounds(535, 245, 103, 50);
-		contentPane.add(btnChia);
+        JButton btnChia = new JButton("Chia");
+        btnChia.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                HamXuLyChia();
+            }
+        });
+        btnChia.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnChia.setBounds(535, 245, 103, 50);
+        contentPane.add(btnChia);
 		
 		JLabel lblKtQuTnh = new JLabel("Kết Quả Tính Toán :");
 		lblKtQuTnh.setFont(new Font("Tahoma", Font.PLAIN, 16));
@@ -110,6 +118,22 @@ public class ManHinhTinhToan extends JFrame {
 		double soA = Double.parseDouble(str_soA);
 		double soB = Double.parseDouble(str_soB);
 		double tong = soA - soB;
+		txtKetQua.setText(String.valueOf(tong));
+	}
+	void HamXuLyNhan() {
+		String str_soA = txtA.getText();
+		String str_soB = txtB.getText();
+		double soA = Double.parseDouble(str_soA);
+		double soB = Double.parseDouble(str_soB);
+		double tong = soA * soB;
+		txtKetQua.setText(String.valueOf(tong));
+	}
+	void HamXuLyChia() {
+		String str_soA = txtA.getText();
+		String str_soB = txtB.getText();
+		double soA = Double.parseDouble(str_soA);
+		double soB = Double.parseDouble(str_soB);
+		double tong = soA / soB;
 		txtKetQua.setText(String.valueOf(tong));
 	}
 }
