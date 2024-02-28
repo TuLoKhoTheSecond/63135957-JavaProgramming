@@ -117,23 +117,23 @@ public class ManHinhTinhToan extends JFrame {
 		String str_soB = txtB.getText();
 		double soA = Double.parseDouble(str_soA);
 		double soB = Double.parseDouble(str_soB);
-		double tong = soA - soB;
-		txtKetQua.setText(String.valueOf(tong));
+		double hieu = soA - soB;
+		txtKetQua.setText(String.valueOf(hieu));
 	}
 	void HamXuLyNhan() {
 		String str_soA = txtA.getText();
 		String str_soB = txtB.getText();
 		double soA = Double.parseDouble(str_soA);
 		double soB = Double.parseDouble(str_soB);
-		double tong = soA * soB;
-		txtKetQua.setText(String.valueOf(tong));
+		double tich = soA * soB;
+		txtKetQua.setText(String.valueOf(tich));
 	}
 	void HamXuLyChia() {
 		String str_soA = txtA.getText();
 		String str_soB = txtB.getText();
 		double soA = Double.parseDouble(str_soA);
 		double soB = Double.parseDouble(str_soB);
-		double tong = soA / soB;
-		txtKetQua.setText(String.valueOf(tong));
+		double thuong = soA / soB;
+		txtKetQua.setText(String.valueOf(thuong));
 	}
 }
