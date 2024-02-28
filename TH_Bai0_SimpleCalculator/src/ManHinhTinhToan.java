@@ -53,26 +53,24 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(txtB);
 		
 		JButton btnCong = new JButton("Cộng");
-		btnCong.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				HamXuLyCong();
-				
-			}
-		});
-		btnCong.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnCong.setBounds(127, 245, 103, 50);
-		contentPane.add(btnCong);
+        btnCong.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                HamXuLyCong();
+            }
+        });
+        btnCong.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnCong.setBounds(127, 245, 103, 50);
+        contentPane.add(btnCong);
 		
-		JButton btnTru = new JButton("Trừ");
-		btnCong.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				HamXuLyTru();
-				
-			}
-		});
-		btnTru.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnTru.setBounds(264, 245, 103, 50);
-		contentPane.add(btnTru);
+        JButton btnTru = new JButton("Trừ");
+        btnTru.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                HamXuLyTru();
+            }
+        });
+        btnTru.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnTru.setBounds(264, 245, 103, 50);
+        contentPane.add(btnTru);
 		
 		JButton btnNhan = new JButton("Nhân");
 
