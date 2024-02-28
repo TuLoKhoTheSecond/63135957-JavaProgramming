@@ -133,7 +133,11 @@ public class ManHinhTinhToan extends JFrame {
 		String str_soB = txtB.getText();
 		double soA = Double.parseDouble(str_soA);
 		double soB = Double.parseDouble(str_soB);
-		double thuong = soA / soB;
-		txtKetQua.setText(String.valueOf(thuong));
+		if (soB != 0) {
+            double thuong = soA / soB;
+            txtKetQua.setText(String.valueOf(thuong));
+        } else {
+            txtKetQua.setText("Ko chia dc cho 0");
+        }
 	}
 }
