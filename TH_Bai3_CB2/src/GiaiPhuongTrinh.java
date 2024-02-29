@@ -4,6 +4,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import javax.swing.JLabel;
+
+import java.awt.BorderLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -30,6 +32,11 @@ public class GiaiPhuongTrinh extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		JPanel panelTitle = new JPanel();
+		JLabel lblTitle = new JLabel("Giải Phương Trình Bậc 2");
+		lblTitle.setFont(new Font("Tahoma", Font.BOLD, 20));
+		panelTitle.add(lblTitle);
+		contentPane.add(panelTitle, BorderLayout.NORTH);
 		
 		JLabel lblNhapa = new JLabel("Nhập a:");
 		lblNhapa.setFont(new Font("Tahoma", Font.PLAIN, 16));
